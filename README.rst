@@ -16,7 +16,7 @@ Add your ``Complex.h`` header to the ``includes`` folder, and your
 ..  code-block:: shell
 
     $ make
-    $ ./demo (on Linus/Mac)
+    $ ./demo (on Linux/Mac)
     $ demo (on PC)
 
 
