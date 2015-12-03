@@ -8,6 +8,8 @@ ifeq ($(OS), Windows_NT)
     EXT = .exe
     RM = del
     CFLAGS += -std=c++11
+	CFLAGS += -I/usr/local/include
+	LDFLAGS += -lfreeglut -lglu32 -lopengl32 -Wl,--subsystem,windows
     CXX = g++
     PREFIX = 
 else
