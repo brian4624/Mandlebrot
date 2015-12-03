@@ -39,6 +39,6 @@ debug:
 	@echo "TESTOBJS = $(TESTOBJS)"
 
 clean:
-	$(RM) $(ALLOBJS) $(DEMOAPP) $(TESTAPP) $(DEPENDS)
+	-$(RM) $(ALLOBJS) $(DEMOAPP) $(TESTAPP) $(DEPENDS)
 
 -include $(DEPENDS)

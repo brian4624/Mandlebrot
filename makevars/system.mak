@@ -6,11 +6,11 @@ LDFLAGS =
 
 ifeq ($(OS), Windows_NT)
     EXT = .exe
-    RM = del
+    RM = rm.exe
     CFLAGS += -std=c++11
-	CFLAGS += -I/usr/local/include
+	#CFLAGS += -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include
 	LDFLAGS += -lfreeglut -lglu32 -lopengl32 -Wl,--subsystem,windows
-    CXX = g++
+	CXX = "C:/Program FIles (x86)/Dev-Cpp/MinGW64/bin/g++.exe"
     PREFIX = 
 else
     EXT =
