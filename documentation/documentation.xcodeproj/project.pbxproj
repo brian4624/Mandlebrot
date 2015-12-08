@@ -1,0 +1,148 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		D3DC1BDA1C1649150054A3B5 /* _build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _build; sourceTree = "<group>"; };
+		D3DC1BDB1C1649150054A3B5 /* code */ = {isa = PBXFileReference; lastKnownFileType = folder; path = code; sourceTree = "<group>"; };
+		D3DC1BDC1C1649150054A3B5 /* CommandLine.rst */ = {isa = PBXFileReference; lastKnownFileType = text; path = CommandLine.rst; sourceTree = "<group>"; };
+		D3DC1BDD1C1649150054A3B5 /* conf.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = conf.py; sourceTree = "<group>"; };
+		D3DC1BDE1C1649150054A3B5 /* glossary.rst */ = {isa = PBXFileReference; lastKnownFileType = text; path = glossary.rst; sourceTree = "<group>"; };
+		D3DC1BDF1C1649150054A3B5 /* index.rst */ = {isa = PBXFileReference; lastKnownFileType = text; path = index.rst; sourceTree = "<group>"; };
+		D3DC1BE01C1649150054A3B5 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		D3DC1BD41C1649150054A3B5 = {
+			isa = PBXGroup;
+			children = (
+				D3DC1BDA1C1649150054A3B5 /* _build */,
+				D3DC1BDB1C1649150054A3B5 /* code */,
+				D3DC1BDC1C1649150054A3B5 /* CommandLine.rst */,
+				D3DC1BDD1C1649150054A3B5 /* conf.py */,
+				D3DC1BDE1C1649150054A3B5 /* glossary.rst */,
+				D3DC1BDF1C1649150054A3B5 /* index.rst */,
+				D3DC1BE01C1649150054A3B5 /* Makefile */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		D3DC1BD91C1649150054A3B5 /* documentation */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = D3DC1BE11C1649150054A3B5 /* Build configuration list for PBXLegacyTarget "documentation" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/Brian/Desktop/Mandlebrot/documentation;
+			dependencies = (
+			);
+			name = documentation;
+			passBuildSettingsInEnvironment = 1;
+			productName = documentation;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		D3DC1BD51C1649150054A3B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = D3DC1BD81C1649150054A3B5 /* Build configuration list for PBXProject "documentation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D3DC1BD41C1649150054A3B5;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3DC1BD91C1649150054A3B5 /* documentation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		D3DC1BD61C1649150054A3B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		D3DC1BD71C1649150054A3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		D3DC1BE21C1649150054A3B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = documentation;
+			};
+			name = Debug;
+		};
+		D3DC1BE31C1649150054A3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = documentation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3DC1BD81C1649150054A3B5 /* Build configuration list for PBXProject "documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DC1BD61C1649150054A3B5 /* Debug */,
+				D3DC1BD71C1649150054A3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3DC1BE11C1649150054A3B5 /* Build configuration list for PBXLegacyTarget "documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DC1BE21C1649150054A3B5 /* Debug */,
+				D3DC1BE31C1649150054A3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3DC1BD51C1649150054A3B5 /* Project object */;
+}
