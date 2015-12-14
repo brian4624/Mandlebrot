@@ -20,7 +20,7 @@ class Graphics {
         const static int WINDOW_WIDTH = 600;    // initial window width
         const static int WINDOW_HEIGHT = 400;   // intiial window height
         const static int WINDOW_X = 50;         // initial window x position
-        const static int WINDOW_Y = 50;         // initial window y position    
+        const static int WINDOW_Y = 50;         // initial window y position
 
         const static int FPS = 60;              // desired frame rate
         const static double FRAME_MSEC;         // calculated from FPS
@@ -41,11 +41,13 @@ class Graphics {
         void display();
         void keyboard( unsigned char key, int x, int y );
         void specialKeyboard( int key, int x, int y );
+        void mouseClicks( int button, int state, int x, int y);
 
         // static callback methods for GLUT
         static void displayWrapper();
         static void keyboardWrapper( unsigned char key, int x, int y);
         static void specialKeyboardWrapper( int key, int x, int y );
         static void animateWrapper();
+        static void mouseClicksWrapper( int button, int state, int x, int y);
 };
 

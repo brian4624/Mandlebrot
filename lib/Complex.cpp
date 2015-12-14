@@ -107,9 +107,10 @@ ostream & operator << ( ostream & lhs, const Complex & rhs ) {
     }
 }
 
+// calculates the magnitude of the complex number
 double Complex::magnitude(void) {
     double z = this->r*(this->r) + this->i*(this->i);
-    long double zmag = sqrt(zmag);
+    long double zmag = sqrt(z);
     return zmag;
 }
 

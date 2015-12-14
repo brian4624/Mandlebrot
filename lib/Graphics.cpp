@@ -35,6 +35,7 @@ void Graphics::glut_init( int argc, char * argv[] ) {
     glutDisplayFunc( displayWrapper );
     glutKeyboardFunc( keyboardWrapper );
     glutSpecialFunc( specialKeyboardWrapper );
+    glutMouseFunc( mouseClicksWrapper );
     glutIdleFunc( animateWrapper );
     glutMainLoop();
 }
@@ -96,13 +97,43 @@ void Graphics::keyboardWrapper( unsigned char key, int x, int y ) {
 }
 
 // special keyboard handler ---------------------------------------------------
-
+// responds to button presses and relocates the position of the image in a corresponding manner
 void Graphics::specialKeyboard( int key, int x, int y ) {
     cout << "special key = " << key << endl;
     if( key == GLUT_KEY_UP ) fractal.yOff -= 1;
+    if( key == GLUT_KEY_DOWN) fractal.yOff += 1;
+    if( key == GLUT_KEY_LEFT) fractal.xOff += 1;
+    if( key == GLUT_KEY_RIGHT) fractal.xOff -= 1;
+    if( key == GLUT_KEY_F1) fractal.scale *= 1.1;
+    if( key == GLUT_KEY_F2) fractal.scale *= 0.9;
+    
+    cout << "xOff: " << fractal.xOff << " yOff: " << fractal.yOff << endl;
+    
 }
 
 void Graphics::specialKeyboardWrapper( int key, int x, int y ) {
     instance-> specialKeyboard( key, x, y );
 }
+
+// special mouse handler ------------------------------------------------------
+// work in progress to properly recenter the image.
+// I don't know what you mean when you say center. Also, where is the center of the image supposed to be at?
+int left_button_state = 0;
+void Graphics::mouseClicks(int button, int state, int x, int y) {
+    if(button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
+        fractal.xOff = x/100;
+        fractal.yOff = y/100;
+        cout << "x: " << x << " y: " << y << endl;
+    }
+}
+
+void Graphics::mouseClicksWrapper( int button, int state, int x, int y) {
+    instance-> mouseClicks( button, state, x, y);
+}
+
+
+
+
+
+
 
