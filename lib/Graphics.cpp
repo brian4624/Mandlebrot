@@ -123,6 +123,8 @@ void Graphics::mouseClicks(int button, int state, int x, int y) {
     if(button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
         fractal.xOff = x/100;
         fractal.yOff = y/100;
+        Mandlebrot_X = (Screen_X - SCREEN_W / 2.0 - Shift_X) * Scale_X;
+        Mandlebrot_Y = (Screen_Y - SCREEN_H / 2.0 - Shift_Y) * Scale_Y;
         cout << "x: " << x << " y: " << y << endl;
     }
 }
